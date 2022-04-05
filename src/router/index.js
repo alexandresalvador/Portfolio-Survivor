@@ -1,6 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import HomeView from '../views/HomeView.vue';
+import HomeView from '@/views/HomeView.vue';
+import Education from '@/views/EducationView.vue';
+import Jobs from '@/views/JobsView.vue';
+import Contact from '@/views/ContactView.vue';
 
 Vue.use(VueRouter);
 
@@ -9,6 +12,21 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView,
+  },
+  {
+    path: '/educacao',
+    name: 'Education',
+    component: Education,
+  },
+  {
+    path: '/trabalho',
+    name: 'Jobs',
+    component: Jobs,
+  },
+  {
+    path: '/contato',
+    name: 'Contact',
+    component: Contact,
   },
   {
     path: '/about',
